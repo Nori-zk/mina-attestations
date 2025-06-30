@@ -39,3 +39,6 @@ console.log(
   '✅ created credential',
   Credential.toJSON(credential).slice(0, 1000) + '...'
 );
+// validate credential - this step is done via browser before trying to store the credential
+await Credential.validate(credential);
+console.log('✅ credential is valid');

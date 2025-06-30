@@ -45,6 +45,7 @@
     "test": "node --test --experimental-strip-types --no-warnings {tests,src}/**/*.test.ts",
     "test-one": "node --enable-source-maps --test --experimental-strip-types --no-warnings",
     "examples": "node --test --experimental-strip-types --no-warnings examples/*.eg.ts",
+    "ecdsa-example": "npm run build && node --test --experimental-strip-types --no-warnings examples/ecdsa.eg.ts",
     "prepublishOnly": "rm -rf build && npm run build"
   },
   "files": [
