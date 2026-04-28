@@ -32,6 +32,9 @@
     "./dynamic": {
       "import": "./build/src/dynamic.js"
     },
+    "./dynamic/array": {
+      "import": "./build/src/dynamic/dynamic-array.js"
+    },
     "./imported": {
       "import": "./build/src/imported.js"
     },
