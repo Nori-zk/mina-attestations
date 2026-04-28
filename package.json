@@ -1,6 +1,6 @@
 {
-  "name": "mina-attestations",
-  "version": "0.5.3",
+  "name": "@nori-zk/mina-attestations",
+  "version": "0.6.4",
   "workspaces": [
     "examples/web-demo",
     "examples/web-demo/api-server"
@@ -11,6 +11,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/zksecurity/mina-attestations"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "keywords": [
     "mina",
@@ -27,6 +31,9 @@
     },
     "./dynamic": {
       "import": "./build/src/dynamic.js"
+    },
+    "./dynamic/array": {
+      "import": "./build/src/dynamic/array/index.js"
     },
     "./imported": {
       "import": "./build/src/imported.js"
@@ -49,8 +56,12 @@
     "prepublishOnly": "rm -rf build && npm run build"
   },
   "files": [
-    "build",
-    "src",
+    "build/src",
+    "!build/src/**/*.test.*",
+    "!build/src/**/*.eg.*",
+    "!build/src/**/*.js.map",
+    "!build/src/**/test/",
+    "!build/src/**/test-emails/",
     "README.md",
     "LICENSE"
   ],
@@ -65,7 +76,7 @@
     "typescript": "^5.7.3"
   },
   "peerDependencies": {
-    "o1js": "^2.3.0"
+    "o1js": "3.0.0-mesa.698ca"
   },
   "engines": {
     "node": ">=22.0"

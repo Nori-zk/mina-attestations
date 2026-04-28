@@ -12,7 +12,7 @@ import {
   DynamicRecord,
   Schema,
   hashDynamic,
-} from 'mina-attestations';
+} from '@nori-zk/mina-attestations';
 import {
   issuer,
   issuerKey,

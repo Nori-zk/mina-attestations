@@ -7,7 +7,7 @@ import {
   DynamicString,
   Operation,
   PresentationSpec,
-} from 'mina-attestations';
+} from '@nori-zk/mina-attestations';
 import { UInt64 } from 'o1js';
 
 const String = DynamicString({ maxLength: 100 });

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Label } from './ui/label';
 import TransgateConnect from '@zkpass/transgate-js-sdk';
-import type { ZkPassResponseItem } from 'mina-attestations/imported';
+import type { ZkPassResponseItem } from '@nori-zk/mina-attestations/imported';
 import {
   exampleProofAndSchema,
   defaultSchema,

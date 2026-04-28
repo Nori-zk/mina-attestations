@@ -7,7 +7,7 @@ Imported credentials are those that cannot be verified with cheap native operati
 Specs for several imported credentials are available under the import `mina-attestations/imported`.
 
 ```ts
-import { EthereumEcdsa } from 'mina-attestations/imported';
+import { EthereumEcdsa } from '@nori-zk/mina-attestations/imported';
 
 const EcdsaCred = await EcdsaEthereum.Credential({ maxMessageLength });
 

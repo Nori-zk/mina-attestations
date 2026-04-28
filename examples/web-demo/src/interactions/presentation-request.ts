@@ -1,8 +1,8 @@
-import { Presentation, PresentationRequest } from 'mina-attestations';
+import { Presentation, PresentationRequest } from '@nori-zk/mina-attestations';
 import {
   PresentationRequestSchema,
   PrettyPrinter,
-} from 'mina-attestations/validation';
+} from '@nori-zk/mina-attestations/validation';
 import { getStoredCredentials } from './store-credential';
 import { privateKey } from './mock-wallet';
 import { API_URL } from '../config';

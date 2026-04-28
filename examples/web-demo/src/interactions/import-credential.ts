@@ -1,6 +1,6 @@
 import { PublicKey } from 'o1js';
-import { Credential } from 'mina-attestations';
-import { ZkPass, type ZkPassResponseItem } from 'mina-attestations/imported';
+import { Credential } from '@nori-zk/mina-attestations';
+import { ZkPass, type ZkPassResponseItem } from '@nori-zk/mina-attestations/imported';
 import { storeCredential } from './store-credential';
 import { getPublicKey } from './obtain-credential';
 import { IS_DEV } from '../config';
