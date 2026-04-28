@@ -56,8 +56,12 @@
     "prepublishOnly": "rm -rf build && npm run build"
   },
   "files": [
-    "build",
-    "src",
+    "build/src",
+    "!build/src/**/*.test.*",
+    "!build/src/**/*.eg.*",
+    "!build/src/**/*.js.map",
+    "!build/src/**/test/",
+    "!build/src/**/test-emails/",
     "README.md",
     "LICENSE"
   ],
