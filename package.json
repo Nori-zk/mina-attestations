@@ -1,6 +1,6 @@
 {
-  "name": "mina-attestations",
-  "version": "0.5.3",
+  "name": "@nori-zk/mina-attestations",
+  "version": "0.6.3",
   "workspaces": [
     "examples/web-demo",
     "examples/web-demo/api-server"
@@ -11,6 +11,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/zksecurity/mina-attestations"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "keywords": [
     "mina",
