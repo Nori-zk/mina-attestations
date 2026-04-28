@@ -1,11 +1,11 @@
 import { Bytes, ZkProgram } from 'o1js';
-import { SHA2 } from 'mina-attestations/dynamic';
+import { SHA2 } from '@nori-zk/mina-attestations/dynamic';
 import {
   rsaVerify65537,
   rsaSign,
   Bigint2048,
   generateRsaKeys65537,
-} from 'mina-attestations/rsa';
+} from '@nori-zk/mina-attestations/rsa';
 
 let keys = generateRsaKeys65537();
 

@@ -85,7 +85,7 @@ import {
   DynamicString,
   Operation,
   PresentationSpec,
-} from 'mina-attestations';
+} from '@nori-zk/mina-attestations';
 import { UInt64 } from 'o1js';
 
 const String = DynamicString({ maxLength: 100 });
@@ -214,13 +214,13 @@ Another reason is that modeling imported credentials as recursive proofs keeps o
 - ECDSA credential that wraps an Ethereum-style signature
 
 ```ts
-import { EcdsaEthereum } from 'mina-attestations/imported';
+import { EcdsaEthereum } from '@nori-zk/mina-attestations/imported';
 ```
 
 - [ZkPass](https://zkpass.org) credential that wraps a ZkPass validator signature, which attests to a web interaction created by the ZkPass TransGate browser extension.
 
 ```ts
-import { ZkPass, type ZkPassResponseItem } from 'mina-attestations/imported';
+import { ZkPass, type ZkPassResponseItem } from '@nori-zk/mina-attestations/imported';
 ```
 
 - [WIP](https://github.com/zksecurity/mina-attestations/tree/main/src/email): zk-email
@@ -307,7 +307,7 @@ The serialization and deserialization of a `CredentialSpec` is handled through m
 
 ```ts
 import { Field, Bytes } from 'o1js';
-import { Credential } from 'mina-attestations';
+import { Credential } from '@nori-zk/mina-attestations';
 
 // Define schema with a fixed-size Bytes type
 const Bytes32 = Bytes(32);
@@ -334,7 +334,7 @@ await Credential.validate(signedCredential);
 
 ```ts
 import { Field, UInt64 } from 'o1js';
-import { Credential, DynamicString } from 'mina-attestations';
+import { Credential, DynamicString } from '@nori-zk/mina-attestations';
 
 const Nationality = DynamicString({ maxLength: 50 });
 
@@ -377,7 +377,7 @@ await Credential.validate(passport);
 
 ```ts
 import { Field } from 'o1js';
-import { Credential } from 'mina-attestations';
+import { Credential } from '@nori-zk/mina-attestations';
 
 // Define simple schema
 const InputData = { value: Field };
@@ -525,7 +525,7 @@ It also specifies the following methods:
 
 ```ts
 import { Field, PrivateKey } from 'o1js';
-import { Credential } from 'mina-attestations';
+import { Credential } from '@nori-zk/mina-attestations';
 
 // Create a native credential spec
 const spec = Credential.Native({ age: Field });
@@ -643,7 +643,7 @@ Example:
 
 ```ts
 import { Field, Bytes, PublicKey, ZkProgram, Struct, Proof } from 'o1js';
-import { Credential } from 'mina-attestations';
+import { Credential } from '@nori-zk/mina-attestations';
 import { owner } from './test-utils.ts'; // dummy owner used for testing
 
 const Bytes32 = Bytes(32);
@@ -739,7 +739,7 @@ Example:
 
 ```ts
 import { Field, UInt64 } from 'o1js';
-import { Credential, DynamicString } from 'mina-attestations';
+import { Credential, DynamicString } from '@nori-zk/mina-attestations';
 
 const Nationality = DynamicString({ maxLength: 50 });
 
@@ -1317,7 +1317,7 @@ import {
   Credential,
   Operation,
   PresentationRequest,
-} from 'mina-attestations';
+} from '@nori-zk/mina-attestations';
 
 // Define schema with bytes for fixed-size strings
 const Bytes32 = Bytes(32);
@@ -1360,7 +1360,7 @@ import {
   Operation,
   PresentationRequest,
   Presentation,
-} from 'mina-attestations';
+} from '@nori-zk/mina-attestations';
 
 // Define schema
 const Bytes32 = Bytes(32);
@@ -1738,7 +1738,7 @@ import {
   Presentation,
   PresentationRequest,
   Operation,
-} from 'mina-attestations';
+} from '@nori-zk/mina-attestations';
 
 // 1. Set up credential and request
 const Bytes32 = Bytes(32);
@@ -1881,7 +1881,7 @@ Example of SHA-512-hashing a dynamic-length string:
 
 ```ts
 import { Bytes, ZkProgram } from 'o1js';
-import { DynamicSHA2, DynamicString } from 'mina-attestations/dynamic';
+import { DynamicSHA2, DynamicString } from '@nori-zk/mina-attestations/dynamic';
 
 // allow strings up to length 100 as input
 const String = DynamicString({ maxLength: 100 });

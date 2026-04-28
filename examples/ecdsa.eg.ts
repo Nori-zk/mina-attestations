@@ -1,8 +1,8 @@
 /**
  * This example shows how to turn an ethers.js signature into an ECDSA credential.
  */
-import { Credential, DynamicBytes } from 'mina-attestations';
-import { EcdsaEthereum } from 'mina-attestations/imported';
+import { Credential, DynamicBytes } from '@nori-zk/mina-attestations';
+import { EcdsaEthereum } from '@nori-zk/mina-attestations/imported';
 import { PrivateKey, Bytes } from 'o1js';
 import { Wallet } from 'ethers/wallet';
 import { id } from 'ethers/hash';
