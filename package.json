@@ -1,6 +1,6 @@
 {
   "name": "@nori-zk/mina-attestations",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "workspaces": [
     "examples/web-demo",
     "examples/web-demo/api-server"
@@ -33,7 +33,7 @@
       "import": "./build/src/dynamic.js"
     },
     "./dynamic/array": {
-      "import": "./build/src/dynamic/dynamic-array.js"
+      "import": "./build/src/dynamic/array/index.js"
     },
     "./imported": {
       "import": "./build/src/imported.js"
