@@ -1,6 +1,6 @@
 {
   "name": "@nori-zk/mina-attestations",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "workspaces": [
     "examples/web-demo",
     "examples/web-demo/api-server"
@@ -76,7 +76,7 @@
     "typescript": "^5.7.3"
   },
   "peerDependencies": {
-    "o1js": "3.0.0-mesa.698ca"
+    "o1js": "3.0.0-mesa.final"
   },
   "engines": {
     "node": ">=22.0"
